@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    background-image: url(../images/bg-desktop.svg);
+    height: 100vh;
+    background-color: hsl(257, 40%, 49%);
+    padding: 50px;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fraunces', serif;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+.huddle-landing {
+    display: flex;
+}
+
+.huddle-landing-content {
+    display: flex;
+
+}
+
+.huddle-banner img {
+    width: auto;
+    height: 44px;
+}
+
+.huddle-landing-images img {
+    width: auto;
+    height: 449px;
+    padding-top: 1px;
+}
+
+.huddle-landing-images {
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding-top: 59px;
+}
+
+.huddle-landing-title {
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.huddle-landing-title h1 {
+    font-size: 39px;
+    padding: 62px 95px 0px 12px;
+    font-weight: 600;
+    line-height: 55px;
+}
+
+.huddle-landing-title p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 28px;
+    color: rgb(216, 216, 216);
+    padding: 20px 11px 20px 7px;
+}
+
+.huddle-landing-title button {
+    font-weight: 200;
+    line-height: 23px;
+    margin-left: 20px;
+    padding: 15px 61px 15px 61px;
+    border-radius: 25px;
+    color: hsl(257, 40%, 49%);
+    font-size: 17px;
+    border: none;
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    box-shadow: 0px 2px 8px 0px black;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 1s all ease;
+
+}
+
+.huddle-landing-fabicon {
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+    display: flex;
+}
+
+.fa-brands {
+    color: rgb(255, 255, 255);
+    border-radius: 40px;
+    padding: 7px 10px 7px 10px;
+    border: 1px solid white;
+}
+
+.fa-brands:hover {
+    color: hsl(300, 69%, 71%);
+    border-radius: 40px;
+    border: 1px solid hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+@media (max-width:320px) {
+    main {
+        justify-content: center;
+        text-align: center;
+        height: 144vh;
+        display: flex;
+        background-image: url(../images/bg-mobile.svg) ;
+       background-repeat: no-repeat;
+        background-color: hsl(257, 40%, 49%);
+    }
+
+    .huddle-banner {
+        padding-right: 80px;
+    }
+
+    .huddle-landing-images {
+        display: flex;
+        height: auto;
+        width: 100%;
+        padding-top: 27px;
+    }
+
+    .huddle-banner img {
+        height: 31px;
+        width: auto;
+        padding-right: 77px;
+    }
+
+
+    .huddle-landing-content {
+        display: inline-block;
+    }
+
+    .huddle-landing-images img {
+        width: auto;
+        height: 200px;
+    }
+
+    .huddle-landing-title h1 {
+        line-height: 30px;
+        font-size: 20px;
+        padding: 20px 0px 0px 0px;
+        font-weight: 600;
+    }
+
+    .huddle-landing-title p {
+        line-height: 22px;
+        font-size: 13px;
+        font-weight: 100;
+    }
+
+    .huddle-landing-title {
+        padding: 20px;
+    }
+
+    .huddle-landing-title button {
+        font-weight: 200;
+    padding: 6px 55px 6px 52px;
+    color: hsl(257, 40%, 49%);
+    font-size: 12px;
+    margin-top: 3px;
+    }
+
+    button:hover{
+        transition: 1s all ease;
+        background-color: hsl(300, 69%, 71%);
+        box-shadow: 0px 2px 8px 0px black;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+
+    .huddle-landing-fabicon {
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    .fa-brands {
+        color: rgb(255, 255, 255);
+        border-radius: 40px;
+        padding: 7px 10px 7px 10px;
+        border: 1px solid white;
+    }
+
+    .fa-brands:hover {
+        color: hsl(300, 69%, 71%);
+        border-radius: 40px;
+        border: 1px solid hsl(300, 69%, 71%);
+        cursor: pointer;
+    }
+
+}
